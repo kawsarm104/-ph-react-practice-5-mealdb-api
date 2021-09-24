@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Meal from '../meal/Meal';
 import './Meals.css';
 const Meals = () => {
     const [allmeals, setAllmeals] = useState([])
@@ -8,14 +9,15 @@ const Meals = () => {
     // fetch('https://www.themealdb.com/api/json/v1/1/search.php?f=a')
         .then(res => res.json())
            .then(data => {
-               console.log("showing all meals data",data.meals)
+               console.log("showing all meals data line 11 in Meals.jsx component", data.meals)
+               setAllmeals(data.meals)
 
                })
     }, [])
     
     return (
         <div>
-            
+            {allmeals.map(meal => <Meal key={meal.idMeal} meal={meal} />)}
         </div>
     );
 };
