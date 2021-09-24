@@ -16,7 +16,7 @@ const Meals = () => {
     }, [])
     
     return (
-        <div className="meals-cart row">
+        <div className="meals-cart row m-3">
             
             {allmeals.map(meal => <Meal key={meal.idMeal} meal={meal} />)}
         </div>
