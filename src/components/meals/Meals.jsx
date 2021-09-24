@@ -16,7 +16,8 @@ const Meals = () => {
     }, [])
     
     return (
-        <div>
+        <div className="meals-cart row">
+            
             {allmeals.map(meal => <Meal key={meal.idMeal} meal={meal} />)}
         </div>
     );
