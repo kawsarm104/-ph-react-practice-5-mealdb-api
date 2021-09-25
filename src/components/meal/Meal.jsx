@@ -17,7 +17,9 @@ const Meal = (props) => {
       <p className="card-text text-justify">{strInstructions.slice(0,200)}...</p>
          <a href={strYoutube}
        className="text-decoration-none"><small className="text-primary">
-         Youtube Link:       {strYoutube}</small></a>
+                  Youtube Link:       {strYoutube}</small>
+              </a> <br />
+              <button className="btn btn-outline-info mt-1">Know More</button>
     </div>
   </div>
         </div>
