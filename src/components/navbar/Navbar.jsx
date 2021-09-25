@@ -1,6 +1,6 @@
 import React from 'react';
 import './Navbar.css';
-const Navbar = () => {
+const Navbar = (props) => {
     return (
         <div className="bg-warning p-4">
          <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark p-2 ">
@@ -18,10 +18,9 @@ const Navbar = () => {
 
        
       </ul>
-      <form className="d-flex">
-        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button className="btn btn-outline-success" type="submit">Search</button>
-      </form>
+      
+        <input className="form-control me-2 w-25" onChange={props.handleSearch} type="search" placeholder="Search your meal..." aria-label="Search"/>
+        
     </div>
   </div>
 </nav>
