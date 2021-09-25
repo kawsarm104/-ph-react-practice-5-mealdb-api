@@ -6,7 +6,7 @@ const Meal = (props) => {
   return (
      
         <div className='meal-cart g-4
-         rounded col-4 '>
+         rounded col-sm-12 col-md-6 col-lg-4'>
         <div className="">
           <div className="card-group ">
       <div className="card ">
