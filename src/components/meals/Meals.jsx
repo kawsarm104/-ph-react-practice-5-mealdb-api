@@ -34,7 +34,7 @@ const Meals = () => {
                 <div className="col-9  row">
                      {displayMeals.map(meal => <Meal key={meal.idMeal} meal={meal} />)}
                 </div>
-                <div className="col-3 text-center p-3 mt-2  align-items-center justify-content-center ">
+                <div className="col-3 text-center p-3 mt-2  ">
                    
                         <Cart />
                    
